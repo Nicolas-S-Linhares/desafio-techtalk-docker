@@ -1,0 +1,42 @@
+services:
+  webapp:
+    container_name: app
+    build: 
+      context: .
+      args:
+        DB_HOST: mysql-db
+        DB_USER: $DB_USER
+        DB_PASS: $DB_PASS
+        DB_NAME: $DB_NAME
+    ports:
+      - "80:3000"
+    # environment:
+    #   NODE_ENV: development
+    # env_file:
+    #   - .env_node
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - backend
+    depends_on:
+      - mysql_db
+
+  mysql_db:
+    container_name: mysql-db
+    image: mysql:latest
+    environment:
+      MYSQL_DATABASE: $DB_NAME
+      MYSQL_USER: php
+      MYSQL_PASSWORD: $DB_PASSWORD
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - backend
+
+volumes:
+  dbdata:
+
+networks:
+  backend:
