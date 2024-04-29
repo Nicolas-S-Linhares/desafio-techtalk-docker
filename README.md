@@ -16,7 +16,7 @@ Ajude o pobre dev.
 - Nenhum arquivo no diretório `src` deve ser modificado (a página php funciona como ela está)
 - Os arquivos `Dockerfile` e `docker-compose.yml` contém erros e más práticas. Quem fizer as melhores correções ganha o prêmio.
 
-Faça um clone do projeto e envie sua proposta para a equipe de DevOps até 06/05/2024. Boa sorte!
+Faça um clone do projeto e depois faça um pull request da sua solução no repositório original até 2024-05-06 às 11:00 (UTF -03:00). Boa sorte!
 
 ### Critérios de Avaliação
 
