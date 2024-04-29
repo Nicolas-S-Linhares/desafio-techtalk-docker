@@ -4,6 +4,9 @@ ENV ACCEPT_EULA=Y
 
 RUN a2enmod rewrite
 
+RUN mkdir -p /var/www/html
+COPY . /var/www/html
+
 #PHP, extensões e outros pacote necessarios
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -106,9 +109,6 @@ ARG DB_PASS
 ARG DB_NAME
 ARG DB_USER
 ARG DB_HOST
-
-RUN mkdir -p /var/www/html
-COPY . /var/www/html
 
 WORKDIR /app
 
