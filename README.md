@@ -22,6 +22,7 @@ Faça um clone do projeto e depois faça um pull request da sua solução no rep
 
 - Site funcional
 - Tempo de build
+- Otimização de cache
 - Tamanho da imagem
 
 ## Dicas
@@ -32,12 +33,13 @@ Faça um clone do projeto e depois faça um pull request da sua solução no rep
 - **Conexão com o Banco**: Certifique-se de que as configurações de conexão com o banco estão corretas e que o webapp pode se comunicar com o MySQL.
 - **Rede Docker**: As configurações de rede estão corretas? Utilize `docker network inspect <network_name>` para ver como os containers estão conectados.
 - **Processo de Build**: Comece por um `docker compose build` seguido de um `docker compose up -d` e observe os logs para entender quaisquer falhas (sim, o tempo de build é bem alto).
-- **Otimização**: Após fazer o site funcionar, otimize o Dockerfile.
+- **Otimização**: Após fazer o site funcionar, otimize o Dockerfile. O que acontece se você incluir um arquivo `teste.txt` no projeto?
 - **Arquivos SRC**: Será que o diretório src precisa ser todo copiado para a imagem no Dockerfile? Avalie o uso de `.dockerignore` para excluir arquivos desnecessários.
 - **Recursos Úteis**:
   - [Melhores Práticas Dockerfile](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
   - [Referência da Instrução RUN](https://docs.docker.com/engine/reference/builder/#run)
   - [Instrução COPY](https://docs.docker.com/engine/reference/builder/#copy)
+  - [dockerignore](https://docs.docker.com/develop/develop-images/guidelines/#exclude-with-dockerignore)
 
 ## Comandos Úteis de Docker
 
