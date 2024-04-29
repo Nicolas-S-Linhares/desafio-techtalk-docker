@@ -26,7 +26,7 @@ Faça um clone do projeto e depois faça um pull request da sua solução no rep
 
 ## Dicas
 
-- **Sem Código**: Você não precisa entender de programação PHP para fazer essa aplicação funcionar
+- **Sem PHP**: Você não precisa entender de programação PHP para fazer essa aplicação funcionar
 - **Pacotes Desnecessários**: Nem todos os pacotes que são instalados são necessários. Avalie quais extensões PHP realmente precisam ser instaladas.
 - **Variáveis de Ambiente**: Verifique se as variáveis de ambiente estão sendo passadas da melhor forma e funcionando corretamente. Use `docker compose config` para ver como as variáveis estão sendo interpretadas.
 - **Conexão com o Banco**: Certifique-se de que as configurações de conexão com o banco estão corretas e que o webapp pode se comunicar com o MySQL.
