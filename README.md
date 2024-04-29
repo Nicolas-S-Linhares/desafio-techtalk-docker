@@ -43,14 +43,14 @@ Faça um clone do projeto e depois faça um pull request da sua solução no rep
 
 ## Comandos Úteis de Docker
 
-### Comandos Básicos de Docker Compose:
+### Comandos Básicos de Docker Compose
 
 - `docker compose up`: Constrói e inicia containers para um serviço.
 - `docker compose up -d`: Inicia os containers em segundo plano.
 - `docker compose down`: Para e remove recursos (containers, redes, etc.).
 - `docker compose build`: Constrói ou reconstrói serviços definidos no docker-compose.yml.
 
-### Gerenciamento e Inspeção:
+### Gerenciamento e Inspeção
 
 - `docker compose ps`: Lista os containers.
 - `docker compose logs <serviço>`: Visualiza os outputs dos containers.
@@ -58,13 +58,13 @@ Faça um clone do projeto e depois faça um pull request da sua solução no rep
 - `docker compose restart <serviço>`: Reinicia serviços.
 - `docker compose config`: Valida e visualiza o arquivo Compose.
 
-### Interação e Depuração:
+### Interação e Depuração
 
 - `docker compose exec -it <serviço> bash`: Entra no container do serviço com um shell bash.
 - `docker compose run <serviço> <comando>`: Executa um comando único para um serviço.
 - `docker compose top <serviço>`: Exibe os processos em execução nos containers do serviço.
 
-### Utilidades:
+### Utilidades
 
 - `docker compose pause <serviço>`: Pausa serviços.
 - `docker compose unpause <serviço>`: Despausa serviços.
