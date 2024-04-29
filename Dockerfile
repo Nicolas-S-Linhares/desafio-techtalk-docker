@@ -4,9 +4,6 @@ ENV ACCEPT_EULA=Y
 
 RUN a2enmod rewrite
 
-RUN mkdir -p /var/www/html
-COPY . /var/www/html
-
 #PHP, extensões e outros pacote necessarios
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
@@ -60,6 +57,9 @@ RUN cd /usr/local/bin \
 RUN pecl install grpc
 
 RUN docker-php-ext-enable grpc
+
+RUN mkdir -p /var/www/html
+COPY . /var/www/html
 
 #SOAP
 RUN apt-get update -y \
