@@ -58,7 +58,7 @@ Faça um clone do projeto e depois faça um pull request da sua solução no rep
 
 ### Interação e Depuração:
 
-- `docker compose exec <serviço> /bin/bash`: Executa um comando em um container em execução.
+- `docker compose exec -it <serviço> bash`: Entra no container do serviço com um shell bash.
 - `docker compose run <serviço> <comando>`: Executa um comando único para um serviço.
 - `docker compose top <serviço>`: Exibe os processos em execução nos containers do serviço.
 
